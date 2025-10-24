@@ -19,7 +19,19 @@ public class TP1_convertisseur_GAUCHET {
         Scanner sc = new Scanner(System.in);
         System.out.print("Saisissez une temperature en degres:");
         double nb1 = sc.nextDouble();
-        System.out.print("Voice la temprature convertie en kelvin " + (nb1+273) + "K");
+        double r = CelciusVersKelvin (nb1);
+        System.out.print("Voice la temprature convertie en kelvin " + r + "K");
     }
     
-}
+    public static double CelciusVersKelvin (double tCelcius) {
+         double result= (tCelcius+273) ;
+         return tCelcius;
+    }
+    
+    public static double KelvinVersCelcius(double k){ 
+        double result= (k-273);
+    }
+    public static double FarenheitVersCelcius()
+    public static double CelciusVersFarenheit()
+    public static double KelvinVersFarenheit()
+    public static double FarenheitVersKelvin()
