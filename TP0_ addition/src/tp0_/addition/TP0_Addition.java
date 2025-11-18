@@ -6,7 +6,7 @@ package tp0_.addition;
 
 import java.util.Scanner;
 
-/**
+/**Ce projet consiste à demander un entier à l'utilisateur et de faire la somme des entier qui le precede 
  *
  * @author lisagauchet
  */
