@@ -123,7 +123,7 @@ public class FenetreQuiz extends javax.swing.JFrame {
 
         lblScore.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
         lblScore.setForeground(new java.awt.Color(102, 153, 255));
-        lblScore.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblScore.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblScore.setText("Score");
 
         btnSuivante.setBackground(new java.awt.Color(153, 204, 255));
@@ -136,6 +136,7 @@ public class FenetreQuiz extends javax.swing.JFrame {
 
         lbl_Feedback.setFont(new java.awt.Font("Kailasa", 0, 24)); // NOI18N
         lbl_Feedback.setForeground(new java.awt.Color(51, 153, 255));
+        lbl_Feedback.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_Feedback.setText("Feeback");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -153,29 +154,27 @@ public class FenetreQuiz extends javax.swing.JFrame {
                     .addComponent(btnRep4))
                 .addGap(116, 116, 116))
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(lbl_Feedback)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnSuivante))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblQuestion, javax.swing.GroupLayout.PREFERRED_SIZE, 457, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblScore, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(407, 407, 407)
+                .addComponent(btnSuivante)
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(lblQuestion, javax.swing.GroupLayout.PREFERRED_SIZE, 803, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lbl_Feedback)
+                .addGap(344, 344, 344))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbl_Feedback)
-                    .addComponent(btnSuivante))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                    .addComponent(btnSuivante)
+                    .addComponent(lblScore))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addComponent(lblQuestion)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -185,9 +184,9 @@ public class FenetreQuiz extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnRep3)
                     .addComponent(btnRep4))
-                .addGap(30, 30, 30)
-                .addComponent(lblScore)
-                .addGap(42, 42, 42))
+                .addGap(49, 49, 49)
+                .addComponent(lbl_Feedback)
+                .addGap(20, 20, 20))
         );
 
         pack();
