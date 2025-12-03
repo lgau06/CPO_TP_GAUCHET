@@ -62,11 +62,10 @@ public class magicien extends personnages {
         p.estAttaque(degats);
     }
 
-    public void ajouterArme(Epee durandal) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void attaquer(Object p) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    @Override
+public boolean ajouterArme(armes a) {
+    return super.ajouterArme(a); // Appelle la méthode de la classe parent
 }
+}
+
+    
