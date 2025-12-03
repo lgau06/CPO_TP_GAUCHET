@@ -2,25 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tp3_heroic_fantasy_gauchet;
+package packageArmes;
 
 /**
  *
  * @author lisagauchet
  */
-public class Epee extends armes {
-
-    int finesse; 
+public class Epee extends armes{
+    private final int finesse;
 
     public Epee(String nom, int niveauAttaque, int finesse) {
-        super(nom, niveauAttaque); 
-        if (finesse > 100) {
-            this.finesse = 100;
-        } else if (finesse < 0) {
-            this.finesse = 0;
-        } else {
-            this.finesse = finesse;
-        }
+        super(nom, niveauAttaque);
+        this.finesse = finesse;
     }
 
     public int getFinesse() {
@@ -29,7 +22,7 @@ public class Epee extends armes {
 
     @Override
     public String toString() {
-        return super.toString() + " | Finesse : " + finesse;
+        return super.toString() + " | finesse=" + finesse;
     }
-    
 }
+
