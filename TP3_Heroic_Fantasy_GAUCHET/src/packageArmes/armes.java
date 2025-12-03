@@ -9,18 +9,10 @@ package packageArmes;
  * @author lisagauchet
  */
 public abstract class armes {
-    
-
-    public int getNiveauAttaque() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    
-    public class Arme {
     protected String nom;
     protected int niveauAttaque;
 
-    public Arme(String nom, int niveauAttaque) {
+    public armes(String nom, int niveauAttaque) {
         this.nom = nom;
         this.niveauAttaque = niveauAttaque;
     }
@@ -36,6 +28,5 @@ public abstract class armes {
     @Override
     public String toString() {
         return nom + " (attaque=" + niveauAttaque + ")";
-    }
     }
 }

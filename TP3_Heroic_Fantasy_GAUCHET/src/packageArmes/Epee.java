@@ -8,11 +8,11 @@ package packageArmes;
  *
  * @author lisagauchet
  */
-public class Epee extends armes{
+public class Epee extends armes {
     private final int finesse;
 
     public Epee(String nom, int niveauAttaque, int finesse) {
-        super(nom, niveauAttaque);
+        super(nom, niveauAttaque);  // OBLIGATOIRE
         this.finesse = finesse;
     }
 
@@ -22,7 +22,7 @@ public class Epee extends armes{
 
     @Override
     public String toString() {
-        return super.toString() + " | finesse=" + finesse;
+        return super.toString() + " | finesse = " + finesse;
     }
 }
 

@@ -12,7 +12,7 @@ public class baton extends armes {
     private final int age;
 
     public baton(String nom, int niveauAttaque, int age) {
-        super(nom, niveauAttaque);
+        super(nom, niveauAttaque);  // OBLIGATOIRE
         this.age = age;
     }
 
@@ -22,7 +22,6 @@ public class baton extends armes {
 
     @Override
     public String toString() {
-        return super.toString() + " | age=" + age;
+        return super.toString() + " | age = " + age;
     }
 }
-
