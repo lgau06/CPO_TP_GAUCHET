@@ -68,15 +68,18 @@ public abstract class personnages implements EtreVivant {
         System.out.println(nom + " ne possède pas d’arme appelée " + nomArme);
     }
    
+    @Override
     public void seFatiguer() {
         this.niveauVie -= 10;
         System.out.println(nom + " se fatigue (-10 vie). Vie restante = " + niveauVie);
     }
 
+    @Override
     public boolean estVivant() {
         return this.niveauVie > 0;
     }
 
+    @Override
     public void estAttaque(int points) {
         this.niveauVie -= points;
         System.out.println(nom + " est attaqué : -" + points + " vie. Vie restante = " + niveauVie);
