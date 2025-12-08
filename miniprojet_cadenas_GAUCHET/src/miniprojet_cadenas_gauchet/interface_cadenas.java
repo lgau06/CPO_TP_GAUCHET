@@ -280,7 +280,7 @@ public class interface_cadenas extends javax.swing.JFrame {
     }//GEN-LAST:event_down_chiffre_2ActionPerformed
 
     private void down_chiffre_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_down_chiffre_4ActionPerformed
-        mettreAJourChiffre(texte_chiffre_1,false);
+        mettreAJourChiffre(texte_chiffre_3,false);
     }//GEN-LAST:event_down_chiffre_4ActionPerformed
 
     private void bouton_recommencerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bouton_recommencerActionPerformed
