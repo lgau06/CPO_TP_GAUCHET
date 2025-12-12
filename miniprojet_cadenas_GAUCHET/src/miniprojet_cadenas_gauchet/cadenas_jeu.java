@@ -10,7 +10,7 @@ package miniprojet_cadenas_gauchet;
  */
 import java.util.Random;
 
-public class metier {
+public class cadenas_jeu {
     private static final int LONGUEUR_CODE = 4;
     private static final int MAX_TENTATIVES = 5;
     private static final int MIN_CHIFFRE = 0;
@@ -20,7 +20,7 @@ public class metier {
     private int tentativesRestantes;
     private boolean estGagne;
    
-    public metier() {
+    public cadenas_jeu() {
         démarrerJeu();
     }
    

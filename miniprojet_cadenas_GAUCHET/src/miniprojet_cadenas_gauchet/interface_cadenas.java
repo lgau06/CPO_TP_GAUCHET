@@ -16,7 +16,7 @@ import java.util.logging.Level;
 
 public class interface_cadenas extends javax.swing.JFrame {
    
-    private metier jeu;
+    private cadenas_jeu jeu;
    
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(interface_cadenas.class.getName());
 
@@ -25,7 +25,7 @@ public class interface_cadenas extends javax.swing.JFrame {
      */
     public interface_cadenas() {
         initComponents();
-        jeu = new metier();
+        jeu = new cadenas_jeu();
         texte_score.setText(jeu.getTentativesEffectuees() + " sur " + jeu.getMaxTentatives());
         texte_intro.setText("Trouvez le bon code en moins de " + jeu.getMaxTentatives() + " tentatives !");
     }
