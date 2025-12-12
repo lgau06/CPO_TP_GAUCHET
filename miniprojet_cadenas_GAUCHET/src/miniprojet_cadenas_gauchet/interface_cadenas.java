@@ -12,6 +12,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import java.util.logging.Level;
 
+
+
 public class interface_cadenas extends javax.swing.JFrame {
    
     private metier jeu;
@@ -45,6 +47,8 @@ public class interface_cadenas extends javax.swing.JFrame {
             label.setText("0");
         }
     }
+
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
