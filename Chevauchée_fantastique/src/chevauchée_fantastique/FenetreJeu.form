@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,-72,0,0,3,57"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+    <Property name="columns" type="int" value="6"/>
+    <Property name="rows" type="int" value="7"/>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="case1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Case1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case2"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case2ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="case3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case3"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case4"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case5"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case6"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case7">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case6"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case8">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case7"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case9">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case8"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case9"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case11">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case10"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case11ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="case12">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case11"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case13">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case12"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case14">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case13"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case15">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case14"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case16">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case15"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case17">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case16"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case17ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="case18">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case17"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case19">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" case18"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case20">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case19"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case21">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case20"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case21ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="case22">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case21"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case23">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case22"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case24">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case23"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case25">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case24"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case25ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="case26">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case25"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case27">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case26"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case28">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case27"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case29">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case28"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case30">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case29"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case31">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case30"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case32">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case31"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case33">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case32"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case34">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case33"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case35">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case40"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="case36">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="case41"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_Recommencer">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Recommencer"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_RecommencerActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_quitter">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Quitter"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_quitterActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
