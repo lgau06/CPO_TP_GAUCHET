@@ -18,6 +18,14 @@ public class Cavalier {
         this.y = y;
     }
 
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
     public int getX() { return x; }
     public int getY() { return y; }
 
@@ -32,4 +40,5 @@ public class Cavalier {
         int dy = Math.abs(y - newY);
         return (dx == 2 && dy == 1) || (dx == 1 && dy == 2);
     }
+
 }

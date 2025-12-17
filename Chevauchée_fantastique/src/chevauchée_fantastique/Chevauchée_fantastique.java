@@ -14,7 +14,9 @@ public class Chevauchée_fantastique {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        new FenetreJeu();
+        int taille = 6;
+        
+        new FenetreJeu().setVisible(true);
     }
     
 }
