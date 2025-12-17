@@ -14,8 +14,8 @@ import java.awt.*;
 
 public class FenetreJeu extends JFrame {
 
-    private Plateau plateau;
-    private Cavalier cavalier;
+    private Plateau Plateau;
+    private Cavalier Cavalier;
     private JButton[][] boutons;
     private int taille = 5; // taille du damier
 
@@ -188,10 +188,14 @@ public class FenetreJeu extends JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.GridLayout(7, 6));
 
-        case1.setText("Case1");
+        case1.setBackground(new java.awt.Color(0, 153, 153));
+        case1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                case1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(case1);
 
-        case2.setText("case2");
         case2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 case2ActionPerformed(evt);
@@ -199,31 +203,22 @@ public class FenetreJeu extends JFrame {
         });
         getContentPane().add(case2);
 
-        case3.setText("case3");
+        case3.setBackground(new java.awt.Color(0, 153, 153));
         getContentPane().add(case3);
-
-        case4.setText("case4");
         getContentPane().add(case4);
 
-        case5.setText("case5");
+        case5.setBackground(new java.awt.Color(0, 153, 153));
         getContentPane().add(case5);
-
-        case6.setText("case6");
         getContentPane().add(case6);
-
-        case7.setText("case6");
         getContentPane().add(case7);
 
-        case8.setText("case7");
+        case8.setBackground(new java.awt.Color(0, 153, 153));
         getContentPane().add(case8);
-
-        case9.setText("case8");
         getContentPane().add(case9);
 
-        case10.setText("case9");
+        case10.setBackground(new java.awt.Color(0, 153, 153));
         getContentPane().add(case10);
 
-        case11.setText("case10");
         case11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 case11ActionPerformed(evt);
@@ -231,39 +226,30 @@ public class FenetreJeu extends JFrame {
         });
         getContentPane().add(case11);
 
-        case12.setText("case11");
+        case12.setBackground(new java.awt.Color(0, 153, 153));
         getContentPane().add(case12);
 
-        case13.setText("case12");
+        case13.setBackground(new java.awt.Color(0, 153, 153));
         getContentPane().add(case13);
-
-        case14.setText("case13");
         getContentPane().add(case14);
 
-        case15.setText("case14");
+        case15.setBackground(new java.awt.Color(0, 153, 153));
         getContentPane().add(case15);
-
-        case16.setText("case15");
         getContentPane().add(case16);
 
-        case17.setText("case16");
+        case17.setBackground(new java.awt.Color(0, 153, 153));
         case17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 case17ActionPerformed(evt);
             }
         });
         getContentPane().add(case17);
-
-        case18.setText("case17");
         getContentPane().add(case18);
-
-        case19.setText(" case18");
         getContentPane().add(case19);
 
-        case20.setText("case19");
+        case20.setBackground(new java.awt.Color(0, 153, 153));
         getContentPane().add(case20);
 
-        case21.setText("case20");
         case21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 case21ActionPerformed(evt);
@@ -271,56 +257,44 @@ public class FenetreJeu extends JFrame {
         });
         getContentPane().add(case21);
 
-        case22.setText("case21");
+        case22.setBackground(new java.awt.Color(0, 153, 153));
         getContentPane().add(case22);
-
-        case23.setText("case22");
         getContentPane().add(case23);
 
-        case24.setText("case23");
+        case24.setBackground(new java.awt.Color(0, 153, 153));
         getContentPane().add(case24);
 
-        case25.setText("case24");
+        case25.setBackground(new java.awt.Color(0, 153, 153));
         case25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 case25ActionPerformed(evt);
             }
         });
         getContentPane().add(case25);
-
-        case26.setText("case25");
         getContentPane().add(case26);
 
-        case27.setText("case26");
+        case27.setBackground(new java.awt.Color(0, 153, 153));
         getContentPane().add(case27);
-
-        case28.setText("case27");
         getContentPane().add(case28);
 
-        case29.setText("case28");
+        case29.setBackground(new java.awt.Color(0, 153, 153));
         getContentPane().add(case29);
-
-        case30.setText("case29");
         getContentPane().add(case30);
-
-        case31.setText("case30");
         getContentPane().add(case31);
 
-        case32.setText("case31");
+        case32.setBackground(new java.awt.Color(0, 153, 153));
         getContentPane().add(case32);
-
-        case33.setText("case32");
         getContentPane().add(case33);
 
-        case34.setText("case33");
+        case34.setBackground(new java.awt.Color(0, 153, 153));
         getContentPane().add(case34);
-
-        case35.setText("case40");
         getContentPane().add(case35);
 
-        case36.setText("case41");
+        case36.setBackground(new java.awt.Color(0, 153, 153));
+        case36.setForeground(new java.awt.Color(0, 153, 153));
         getContentPane().add(case36);
 
+        btn_Recommencer.setForeground(new java.awt.Color(0, 153, 153));
         btn_Recommencer.setText("Recommencer");
         btn_Recommencer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -329,6 +303,7 @@ public class FenetreJeu extends JFrame {
         });
         getContentPane().add(btn_Recommencer);
 
+        btn_quitter.setForeground(new java.awt.Color(0, 153, 153));
         btn_quitter.setText("Quitter");
         btn_quitter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -370,6 +345,10 @@ public class FenetreJeu extends JFrame {
     private void case25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case25ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_case25ActionPerformed
+
+    private void case1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_case1ActionPerformed
 
     /**
      * @param args the command line arguments

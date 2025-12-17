@@ -28,201 +28,192 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="case1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Case1"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="case2"/>
-      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case2ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="case3"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case4">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="case4"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case5">
       <Properties>
-        <Property name="text" type="java.lang.String" value="case5"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case6">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="case6"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case7">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="case6"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case8">
       <Properties>
-        <Property name="text" type="java.lang.String" value="case7"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case9">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="case8"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case10">
       <Properties>
-        <Property name="text" type="java.lang.String" value="case9"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case11">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="case10"/>
-      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case11ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case12">
       <Properties>
-        <Property name="text" type="java.lang.String" value="case11"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case13">
       <Properties>
-        <Property name="text" type="java.lang.String" value="case12"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case14">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="case13"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case15">
       <Properties>
-        <Property name="text" type="java.lang.String" value="case14"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case16">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="case15"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case17">
       <Properties>
-        <Property name="text" type="java.lang.String" value="case16"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case17ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case18">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="case17"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case19">
-      <Properties>
-        <Property name="text" type="java.lang.String" value=" case18"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case20">
       <Properties>
-        <Property name="text" type="java.lang.String" value="case19"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case21">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="case20"/>
-      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case21ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case22">
       <Properties>
-        <Property name="text" type="java.lang.String" value="case21"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case23">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="case22"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case24">
       <Properties>
-        <Property name="text" type="java.lang.String" value="case23"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case25">
       <Properties>
-        <Property name="text" type="java.lang.String" value="case24"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case25ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case26">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="case25"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case27">
       <Properties>
-        <Property name="text" type="java.lang.String" value="case26"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case28">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="case27"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case29">
       <Properties>
-        <Property name="text" type="java.lang.String" value="case28"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case30">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="case29"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case31">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="case30"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case32">
       <Properties>
-        <Property name="text" type="java.lang.String" value="case31"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case33">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="case32"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case34">
       <Properties>
-        <Property name="text" type="java.lang.String" value="case33"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case35">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="case40"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="case36">
       <Properties>
-        <Property name="text" type="java.lang.String" value="case41"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn_Recommencer">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Recommencer"/>
       </Properties>
       <Events>
@@ -231,6 +222,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_quitter">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Quitter"/>
       </Properties>
       <Events>
