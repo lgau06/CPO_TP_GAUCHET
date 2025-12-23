@@ -13,32 +13,31 @@ public class Cavalier {
     private int x;
     private int y;
 
+    // Position initiale
     public Cavalier(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
-    public void setX(int x) {
-        this.x = x;
+    // Getters
+    public int getX() {
+        return x;
     }
 
-    public void setY(int y) {
-        this.y = y;
+    public int getY() {
+        return y;
     }
 
-    public int getX() { return x; }
-    public int getY() { return y; }
-
+    // Déplacement du cavalier
     public void deplacer(int newX, int newY) {
-        x = newX;
-        y = newY;
+        this.x = newX;
+        this.y = newY;
     }
 
-    // Déplacement valide comme un cavalier aux échecs
+    // Règle du cavalier aux échecs (déplacement en L)
     public boolean deplacementValide(int newX, int newY) {
-        int dx = Math.abs(x - newX);
-        int dy = Math.abs(y - newY);
+        int dx = Math.abs(newX - x);
+        int dy = Math.abs(newY - y);
         return (dx == 2 && dy == 1) || (dx == 1 && dy == 2);
     }
-
 }

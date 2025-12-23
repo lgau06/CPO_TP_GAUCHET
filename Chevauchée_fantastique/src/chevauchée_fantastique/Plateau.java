@@ -17,16 +17,44 @@ public class Plateau {
     public Plateau(int taille) {
         this.taille = taille;
         cases = new Case[taille][taille];
-        cavalier = new Cavalier(0, 0); // position de départ
     }
 
+    // Initialisation du niveau
     public void initialiser(boolean[][] config) {
-        for (int i = 0; i < taille; i++) {
-            for (int j = 0; j < taille; j++) {
-                cases[i][j] = new Case(config[i][j]);
+
+    // Création des cases
+    for (int i = 0; i < taille; i++) {
+        for (int j = 0; j < taille; j++) {
+            cases[i][j] = new Case(config[i][j]);
+        }
+    }
+
+    // 🔹 Trouver une case ALLUMÉE pour démarrer
+    int startX = -1;
+    int startY = -1;
+
+    for (int i = 0; i < taille && startX == -1; i++) {
+        for (int j = 0; j < taille; j++) {
+            if (cases[i][j].estAllumee()) {
+                startX = i;
+                startY = j;
+                break;
             }
         }
     }
+
+    // Sécurité (au cas où)
+    if (startX == -1) {
+        throw new IllegalStateException("Aucune case allumée dans le niveau");
+    }
+
+    // Placement du cavalier
+    cavalier = new Cavalier(startX, startY);
+
+    // Éteindre la case de départ
+    cases[startX][startY].eteindre();
+}
+
 
     public int getTaille() {
         return taille;
@@ -36,41 +64,43 @@ public class Plateau {
         return cases[x][y];
     }
 
-    // 🔹 ACCÈS AU CAVALIER
     public Cavalier getCavalier() {
         return cavalier;
     }
 
-    // 🔹 VÉRIFIE SI LE DÉPLACEMENT EST VALIDE
+    // 🔒 RÈGLE STRICTE DU SUJET
     public boolean deplacementValide(int x, int y) {
+
         int dx = Math.abs(x - cavalier.getX());
         int dy = Math.abs(y - cavalier.getY());
 
-        // déplacement en L du cavalier
+        // Déplacement en L
         if (!((dx == 2 && dy == 1) || (dx == 1 && dy == 2))) {
             return false;
         }
 
-        // dans les limites du plateau
-        return x >= 0 && x < taille && y >= 0 && y < taille;
+        // Dans le plateau
+        if (x < 0 || x >= taille || y < 0 || y >= taille) {
+            return false;
+        }
+
+        // ❗ INTERDIT si la case est déjà éteinte
+        return cases[x][y].estAllumee();
     }
 
-    // 🔹 DÉPLACE LE CAVALIER
+    // Déplacement du cavalier
     public void deplacerCavalier(int x, int y) {
-        cavalier.setX(x);
-        cavalier.setY(y);
+        cavalier.deplacer(x, y);
         cases[x][y].eteindre();
     }
 
-    // 🔹 CONDITION DE VICTOIRE
+    // Condition de victoire
     public boolean victoire() {
-        return toutesEteintes();
-    }
-
-    public boolean toutesEteintes() {
         for (int i = 0; i < taille; i++) {
             for (int j = 0; j < taille; j++) {
-                if (cases[i][j].estAllumee()) return false;
+                if (cases[i][j].estAllumee()) {
+                    return false;
+                }
             }
         }
         return true;

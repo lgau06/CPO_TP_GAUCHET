@@ -10,13 +10,9 @@ package chevauchée_fantastique;
  */
 public class Chevauchée_fantastique {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        int taille = 6;
-        
-        new FenetreJeu().setVisible(true);
+        java.awt.EventQueue.invokeLater(() -> {
+            new FenetreJeu().setVisible(true);
+        });
     }
-    
 }
