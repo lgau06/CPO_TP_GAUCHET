@@ -8,7 +8,6 @@ package chevauchée_fantastique;
  *
  * @author lisagauchet
  */
-
 public class Case {
 
     private boolean allumee;

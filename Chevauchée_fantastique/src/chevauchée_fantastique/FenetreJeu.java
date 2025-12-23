@@ -3,91 +3,67 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package chevauchée_fantastique;
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
+public class FenetreJeu extends JFrame {
+    private Plateau plateau;
+    private javax.swing.JButton[][] boutons;
 
-/**
- *
- * @author lisagauchet
- */
-
-
-
-public class FenetreJeu extends javax.swing.JFrame {
-   
-   
-    
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FenetreJeu.class.getName());
- 
-        private Plateau plateau;
-        private javax.swing.JButton[][] boutons;
-   
-    /**
-     * Creates new form Jeu
-     */
-        public FenetreJeu() {
-            initComponents();
-            initialiserJeu();
-        }
- 
+    public FenetreJeu() {
+        initComponents();
+        initialiserJeu();
+}
     private boolean[][] configInitiale() {
-        boolean[][] config = new boolean[6][6];
-        for (int i = 0; i < 6; i++) {
-            for (int j = 0; j < 6; j++) {
-                config[i][j] = (i + j) % 2 == 0;
+    boolean[][] config = new boolean[6][6];
+    for (int i = 0; i < 6; i++) {
+        for (int j = 0; j < 6; j++) {
+            config[i][j] = (i + j) % 2 == 0;
         }
     }
     return config;
 }
-   
-        
     private void initialiserJeu() {
-        plateau = new Plateau(6);
-        plateau.initialiser(configInitiale());
+    plateau = new Plateau(6);
+    plateau.initialiser(configInitiale());
 
-        boutons = new javax.swing.JButton[][]{
-            {case1, case2, case3, case4, case5, case6},
-            {case7, case8, case9, case10, case11, case12},
-            {case13, case14, case15, case16, case17, case18},
-            {case19, case20, case21, case22, case23, case24},
-            {case25, case26, case27, case28, case29, case30},
-            {case31, case32, case33, case34, case35, case36}
-        };
+    boutons = new javax.swing.JButton[][]{
+        {case1, case2, case3, case4, case5, case6},
+        {case7, case8, case9, case10, case11, case12},
+        {case13, case14, case15, case16, case17, case18},
+        {case19, case20, case21, case22, case23, case24},
+        {case25, case26, case27, case28, case29, case30},
+        {case31, case32, case33, case34, case35, case36}
+    };
 
     mettreAJourAffichage();
 }
 
-private void mettreAJourAffichage() {
+    private void mettreAJourAffichage() {
     for (int i = 0; i < plateau.getTaille(); i++) {
         for (int j = 0; j < plateau.getTaille(); j++) {
 
             javax.swing.JButton btn = boutons[i][j];
 
-            btn.setOpaque(true);
-            btn.setContentAreaFilled(true);
-            btn.setBorderPainted(false);
-
             if (plateau.getCase(i, j).estAllumee()) {
-    btn.setBackground(new java.awt.Color(0, 153, 153));
-} else {
-    btn.setBackground(java.awt.Color.WHITE);
-}
-
-btn.setEnabled(true);
-
+                btn.setEnabled(true);
+                btn.setBackground(new java.awt.Color(0, 153, 153));
+            } else {
+                btn.setEnabled(false);
+                btn.setBackground(java.awt.Color.LIGHT_GRAY);
+            }
 
             if (plateau.getCavalier().getX() == i &&
                 plateau.getCavalier().getY() == j) {
                 btn.setText("♞");
-                btn.setFont(new java.awt.Font("Serif", java.awt.Font.BOLD, 28));
+                btn.setFont(new java.awt.Font("Serif", java.awt.Font.BOLD, 24));
             } else {
                 btn.setText("");
             }
         }
     }
 }
- 
-private void clicCase(int x, int y) {
+
+    private void clicCase(int x, int y) {
     if (plateau.deplacementValide(x, y)) {
         plateau.deplacerCavalier(x, y);
         mettreAJourAffichage();
@@ -103,7 +79,6 @@ private void clicCase(int x, int y) {
     }
 }
 
-   
 
 
 
@@ -452,7 +427,7 @@ private void clicCase(int x, int y) {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_RecommencerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_RecommencerActionPerformed
-        initialiserJeu();
+        
     }//GEN-LAST:event_btn_RecommencerActionPerformed
 
     private void btn_quitterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_quitterActionPerformed
