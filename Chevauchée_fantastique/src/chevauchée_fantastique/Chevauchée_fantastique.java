@@ -9,10 +9,7 @@ package chevauchée_fantastique;
  * @author lisagauchet
  */
 public class Chevauchée_fantastique {
-
     public static void main(String[] args) {
-        java.awt.EventQueue.invokeLater(() -> {
-            new FenetreJeu().setVisible(true);
-        });
+        new FenetreJeu();
     }
 }

@@ -17,15 +17,15 @@ public class FenetreJeu extends JFrame {
     boolean[][] config = new boolean[6][6];
     for (int i = 0; i < 6; i++) {
         for (int j = 0; j < 6; j++) {
-            config[i][j] = (i + j) % 2 == 0;
+            config[i][j] = (i + j) % 2 == 0; // damier
         }
     }
     return config;
 }
     private void initialiserJeu() {
     plateau = new Plateau(6);
-    plateau.initialiser(configInitiale());
-
+    plateau.initialiser(configInitiale()); 
+    
     boutons = new javax.swing.JButton[][]{
         {case1, case2, case3, case4, case5, case6},
         {case7, case8, case9, case10, case11, case12},
@@ -35,6 +35,9 @@ public class FenetreJeu extends JFrame {
         {case31, case32, case33, case34, case35, case36}
     };
 
+    // Éteindre la case de départ
+    plateau.getCase(0, 0).eteindre();
+
     mettreAJourAffichage();
 }
 
@@ -42,7 +45,7 @@ public class FenetreJeu extends JFrame {
     for (int i = 0; i < plateau.getTaille(); i++) {
         for (int j = 0; j < plateau.getTaille(); j++) {
 
-            javax.swing.JButton btn = boutons[i][j];
+            JButton btn = boutons[i][j];
 
             if (plateau.getCase(i, j).estAllumee()) {
                 btn.setEnabled(true);
@@ -62,7 +65,6 @@ public class FenetreJeu extends JFrame {
         }
     }
 }
-
     private void clicCase(int x, int y) {
     if (plateau.deplacementValide(x, y)) {
         plateau.deplacerCavalier(x, y);
@@ -79,6 +81,7 @@ public class FenetreJeu extends JFrame {
     }
 }
 
+    
 
 
 
@@ -427,7 +430,7 @@ public class FenetreJeu extends JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_RecommencerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_RecommencerActionPerformed
-        
+        initialiserJeu();
     }//GEN-LAST:event_btn_RecommencerActionPerformed
 
     private void btn_quitterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_quitterActionPerformed

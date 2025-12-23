@@ -9,18 +9,12 @@ package chevauchée_fantastique;
  * @author lisagauchet
  */
 public class Case {
-
     private boolean allumee;
 
     public Case(boolean allumee) {
         this.allumee = allumee;
     }
 
-    public boolean estAllumee() {
-        return allumee;
-    }
-
-    public void eteindre() {
-        allumee = false;
-    }
+    public boolean estAllumee() { return allumee; }
+    public void eteindre() { allumee = false; }
 }
