@@ -11,7 +11,9 @@ package chevauchée_fantastique;
 public class Chevauchée_fantastique {
     public static void main(String[] args) {
         java.awt.EventQueue.invokeLater(() -> {
-        new AccueilJeu().setVisible(true);           
+        AccueilJeu accueil = new AccueilJeu();
+        accueil.setLocationRelativeTo(null);
+        accueil.setVisible(true);        
     });
 
  }

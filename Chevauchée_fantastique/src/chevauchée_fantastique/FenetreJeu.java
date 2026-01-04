@@ -10,21 +10,70 @@ public class FenetreJeu extends JFrame {
     private javax.swing.JButton[][] boutons;
     private static final java.awt.Color CASE_ALLUMEE = new java.awt.Color(255, 220, 120);
     private static final java.awt.Color CASE_ETEINTE = new java.awt.Color(180, 180, 180);
-    
+    private int niveau;
+
+    public FenetreJeu(int niveau) {
+    this.niveau = niveau;
+    initComponents();
+    initialiserJeu();
+    }
 
     public FenetreJeu() {
-        initComponents();
-        initialiserJeu();
-}
+        this(1); // niveau par défaut
+    }
+    
     private boolean[][] configInitiale() {
     boolean[][] config = new boolean[6][6];
+
+    System.out.println("Niveau chargé : " + niveau);
+
+    switch (niveau) {
+
+        case 1: // DÉBUTANT → tout allumé
+            for (int i = 0; i < 6; i++) {
+                for (int j = 0; j < 6; j++) {
+                    config[i][j] = true;
+                }
+            }
+            break;
+
+        case 2: // INTERMÉDIAIRE → centre éteint
+            for (int i = 0; i < 6; i++) {
+                for (int j = 0; j < 6; j++) {
+                    config[i][j] = true;
+                }
+            }
+            config[2][2] = false;
+            config[2][3] = false;
+            config[3][2] = false;
+            config[3][3] = false;
+            break;
+
+        case 3: // EXPERT → chemin complexe mais solvable
     for (int i = 0; i < 6; i++) {
         for (int j = 0; j < 6; j++) {
-            config[i][j] = true;
+            config[i][j] = false;
         }
     }
+
+    int[][] chemin = {
+        {0, 1}, {1, 3}, {2, 5}, {4, 4},
+        {5, 2}, {3, 1}, {1, 2}, {2, 4},
+        {4, 5}, {5, 3}
+    };
+
+    for (int[] c : chemin) {
+        config[c[0]][c[1]] = true;
+    }
+    break;
+
+        default:
+            System.out.println("Niveau inconnu !");
+    }
+
     return config;
 }
+
     private void initialiserJeu() {
     plateau = new Plateau(6);
     plateau.initialiser(configInitiale());

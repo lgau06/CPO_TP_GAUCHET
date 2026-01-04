@@ -29,7 +29,10 @@ public class AccueilJeu extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        debutant = new javax.swing.JButton();
+        intermediaire = new javax.swing.JButton();
+        expert = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -37,12 +40,34 @@ public class AccueilJeu extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 204, 51));
         jLabel1.setText("Bienvenue dans le jeu chevauchée fantastique ");
 
-        jButton1.setFont(new java.awt.Font("Thonburi", 0, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 204, 0));
-        jButton1.setText("Appuyer ici pour commencer à jouer !!!");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jLabel2.setFont(new java.awt.Font("Thonburi", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 204, 0));
+        jLabel2.setText("Choisissez votre niveau ");
+
+        debutant.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        debutant.setForeground(new java.awt.Color(255, 204, 0));
+        debutant.setText("Débutant");
+        debutant.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                debutantActionPerformed(evt);
+            }
+        });
+
+        intermediaire.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        intermediaire.setForeground(new java.awt.Color(255, 204, 0));
+        intermediaire.setText("Intermédiaire");
+        intermediaire.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                intermediaireActionPerformed(evt);
+            }
+        });
+
+        expert.setFont(new java.awt.Font("Helvetica Neue", 0, 12)); // NOI18N
+        expert.setForeground(new java.awt.Color(255, 204, 0));
+        expert.setText("expert");
+        expert.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                expertActionPerformed(evt);
             }
         });
 
@@ -53,11 +78,19 @@ public class AccueilJeu extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(139, 139, 139)
-                        .addComponent(jButton1)))
+                        .addGap(188, 188, 188)
+                        .addComponent(jLabel2))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(50, 50, 50)
+                            .addComponent(debutant)
+                            .addGap(95, 95, 95)
+                            .addComponent(intermediaire)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(expert))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(35, 35, 35)
+                            .addComponent(jLabel1))))
                 .addContainerGap(54, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -65,18 +98,39 @@ public class AccueilJeu extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(66, 66, 66)
                 .addComponent(jLabel1)
-                .addGap(78, 78, 78)
-                .addComponent(jButton1)
-                .addContainerGap(116, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(debutant)
+                    .addComponent(intermediaire)
+                    .addComponent(expert))
+                .addGap(83, 83, 83))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        new FenetreJeu().setVisible(true);
+    private void debutantActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_debutantActionPerformed
+        FenetreJeu jeu = new FenetreJeu(1);
+        jeu.setLocationRelativeTo(null);
+        jeu.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_debutantActionPerformed
+
+    private void intermediaireActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_intermediaireActionPerformed
+        FenetreJeu jeu = new FenetreJeu(2);
+        jeu.setLocationRelativeTo(null);
+        jeu.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_intermediaireActionPerformed
+
+    private void expertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expertActionPerformed
+        FenetreJeu jeu = new FenetreJeu(3);
+        jeu.setLocationRelativeTo(null);
+        jeu.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_expertActionPerformed
 
     /**
      * @param args the command line arguments
@@ -104,7 +158,10 @@ public class AccueilJeu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton debutant;
+    private javax.swing.JButton expert;
+    private javax.swing.JButton intermediaire;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
