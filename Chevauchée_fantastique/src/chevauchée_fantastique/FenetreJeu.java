@@ -8,6 +8,9 @@ import javax.swing.*;
 public class FenetreJeu extends JFrame {
     private Plateau plateau;
     private javax.swing.JButton[][] boutons;
+    private static final java.awt.Color CASE_ALLUMEE = new java.awt.Color(255, 220, 120);
+    private static final java.awt.Color CASE_ETEINTE = new java.awt.Color(180, 180, 180);
+    
 
     public FenetreJeu() {
         initComponents();
@@ -24,9 +27,10 @@ public class FenetreJeu extends JFrame {
 }
     private void initialiserJeu() {
     plateau = new Plateau(6);
-    plateau.initialiser(configInitiale()); 
+    plateau.initialiser(configInitiale());
+
     
-    boutons = new javax.swing.JButton[][]{
+    boutons = new JButton[][] {
         {case1, case2, case3, case4, case5, case6},
         {case7, case8, case9, case10, case11, case12},
         {case13, case14, case15, case16, case17, case18},
@@ -35,17 +39,25 @@ public class FenetreJeu extends JFrame {
         {case31, case32, case33, case34, case35, case36}
     };
 
-    // 🔹 ICI on ajoute la boucle 🔹
+    
     for (int i = 0; i < plateau.getTaille(); i++) {
         for (int j = 0; j < plateau.getTaille(); j++) {
+            boutons[i][j].setOpaque(true);
+            boutons[i][j].setBorderPainted(true);
+            boutons[i][j].setBorder(
+                javax.swing.BorderFactory.createLineBorder(java.awt.Color.DARK_GRAY, 1)
+            );
+
             final int x = i;
             final int y = j;
             boutons[i][j].addActionListener(e -> clicCase(x, y));
         }
     }
 
+    
     mettreAJourAffichage();
 }
+
     private void mettreAJourAffichage() {
     for (int i = 0; i < plateau.getTaille(); i++) {
         for (int j = 0; j < plateau.getTaille(); j++) {
@@ -54,12 +66,12 @@ public class FenetreJeu extends JFrame {
 
             if (plateau.getCase(i, j).estAllumee()) {
                 btn.setEnabled(true);
-                btn.setBackground(new java.awt.Color(0, 153, 153));
+                btn.setBackground(CASE_ALLUMEE);
             } else {
                 btn.setEnabled(false);
-                btn.setBackground(java.awt.Color.LIGHT_GRAY);
+                btn.setBackground(CASE_ETEINTE);
             }
-
+          
             if (plateau.getCavalier().getX() == i &&
                 plateau.getCavalier().getY() == j) {
                 btn.setText("♞");
