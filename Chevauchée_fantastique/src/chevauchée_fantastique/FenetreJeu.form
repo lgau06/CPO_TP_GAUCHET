@@ -32,14 +32,8 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case1ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case2">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case2ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case3">
       <Properties>
@@ -47,14 +41,8 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case3ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case4">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case4ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case5">
       <Properties>
@@ -62,19 +50,10 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case5ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case6">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case6ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case7">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case7ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case8">
       <Properties>
@@ -82,14 +61,8 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case8ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case9">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case9ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case10">
       <Properties>
@@ -97,14 +70,8 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case10ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case11">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case11ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case12">
       <Properties>
@@ -112,9 +79,6 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case12ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case13">
       <Properties>
@@ -122,14 +86,8 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case13ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case14">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case14ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case15">
       <Properties>
@@ -137,14 +95,8 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case15ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case16">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case16ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case17">
       <Properties>
@@ -152,19 +104,10 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case17ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case18">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case18ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case19">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case19ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case20">
       <Properties>
@@ -172,14 +115,8 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case20ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case21">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case21ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case22">
       <Properties>
@@ -187,14 +124,8 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case22ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case23">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case23ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case24">
       <Properties>
@@ -202,9 +133,6 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case24ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case25">
       <Properties>
@@ -212,14 +140,8 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case25ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case26">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case26ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case27">
       <Properties>
@@ -227,14 +149,8 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case27ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case28">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case28ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case29">
       <Properties>
@@ -242,19 +158,10 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case29ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case30">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case30ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case31">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case31ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case32">
       <Properties>
@@ -262,14 +169,8 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case32ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case33">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case33ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case34">
       <Properties>
@@ -277,14 +178,8 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case34ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case35">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case35ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="case36">
       <Properties>
@@ -295,9 +190,6 @@
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="case36ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn_Recommencer">
       <Properties>

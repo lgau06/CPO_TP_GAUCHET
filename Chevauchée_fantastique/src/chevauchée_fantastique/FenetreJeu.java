@@ -17,7 +17,7 @@ public class FenetreJeu extends JFrame {
     boolean[][] config = new boolean[6][6];
     for (int i = 0; i < 6; i++) {
         for (int j = 0; j < 6; j++) {
-            config[i][j] = (i + j) % 2 == 0; // damier
+            config[i][j] = true;
         }
     }
     return config;
@@ -35,12 +35,17 @@ public class FenetreJeu extends JFrame {
         {case31, case32, case33, case34, case35, case36}
     };
 
-    // Éteindre la case de départ
-    plateau.getCase(0, 0).eteindre();
+    // 🔹 ICI on ajoute la boucle 🔹
+    for (int i = 0; i < plateau.getTaille(); i++) {
+        for (int j = 0; j < plateau.getTaille(); j++) {
+            final int x = i;
+            final int y = j;
+            boutons[i][j].addActionListener(e -> clicCase(x, y));
+        }
+    }
 
     mettreAJourAffichage();
 }
-
     private void mettreAJourAffichage() {
     for (int i = 0; i < plateau.getTaille(); i++) {
         for (int j = 0; j < plateau.getTaille(); j++) {
@@ -71,13 +76,18 @@ public class FenetreJeu extends JFrame {
         mettreAJourAffichage();
 
         if (plateau.victoire()) {
-            javax.swing.JOptionPane.showMessageDialog(
+            JOptionPane.showMessageDialog(
                 this,
-                "Bravo ! Niveau terminé 🎉",
-                "Victoire",
-                javax.swing.JOptionPane.INFORMATION_MESSAGE
+                "Bravo ! Niveau terminé 🎉"
             );
         }
+    } else {
+        JOptionPane.showMessageDialog(
+            this,
+            "Déplacement invalide !",
+            "Erreur",
+            JOptionPane.WARNING_MESSAGE
+        );
     }
 }
 
@@ -138,274 +148,76 @@ public class FenetreJeu extends JFrame {
         getContentPane().setLayout(new java.awt.GridLayout(7, 6));
 
         case1.setBackground(new java.awt.Color(0, 153, 153));
-        case1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case1ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case1);
-
-        case2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case2ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case2);
 
         case3.setBackground(new java.awt.Color(0, 153, 153));
-        case3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case3ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case3);
-
-        case4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case4ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case4);
 
         case5.setBackground(new java.awt.Color(0, 153, 153));
-        case5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case5ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case5);
-
-        case6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case6ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case6);
-
-        case7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case7ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case7);
 
         case8.setBackground(new java.awt.Color(0, 153, 153));
-        case8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case8ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case8);
-
-        case9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case9ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case9);
 
         case10.setBackground(new java.awt.Color(0, 153, 153));
-        case10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case10ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case10);
-
-        case11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case11ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case11);
 
         case12.setBackground(new java.awt.Color(0, 153, 153));
-        case12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case12ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case12);
 
         case13.setBackground(new java.awt.Color(0, 153, 153));
-        case13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case13ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case13);
-
-        case14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case14ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case14);
 
         case15.setBackground(new java.awt.Color(0, 153, 153));
-        case15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case15ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case15);
-
-        case16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case16ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case16);
 
         case17.setBackground(new java.awt.Color(0, 153, 153));
-        case17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case17ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case17);
-
-        case18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case18ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case18);
-
-        case19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case19ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case19);
 
         case20.setBackground(new java.awt.Color(0, 153, 153));
-        case20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case20ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case20);
-
-        case21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case21ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case21);
 
         case22.setBackground(new java.awt.Color(0, 153, 153));
-        case22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case22ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case22);
-
-        case23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case23ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case23);
 
         case24.setBackground(new java.awt.Color(0, 153, 153));
-        case24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case24ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case24);
 
         case25.setBackground(new java.awt.Color(0, 153, 153));
-        case25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case25ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case25);
-
-        case26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case26ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case26);
 
         case27.setBackground(new java.awt.Color(0, 153, 153));
-        case27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case27ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case27);
-
-        case28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case28ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case28);
 
         case29.setBackground(new java.awt.Color(0, 153, 153));
-        case29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case29ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case29);
-
-        case30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case30ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case30);
-
-        case31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case31ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case31);
 
         case32.setBackground(new java.awt.Color(0, 153, 153));
-        case32.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case32ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case32);
-
-        case33.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case33ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case33);
 
         case34.setBackground(new java.awt.Color(0, 153, 153));
-        case34.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case34ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case34);
-
-        case35.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case35ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case35);
 
         case36.setBackground(new java.awt.Color(0, 153, 153));
         case36.setForeground(new java.awt.Color(0, 153, 153));
-        case36.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                case36ActionPerformed(evt);
-            }
-        });
         getContentPane().add(case36);
 
         btn_Recommencer.setForeground(new java.awt.Color(0, 153, 153));
@@ -436,150 +248,6 @@ public class FenetreJeu extends JFrame {
     private void btn_quitterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_quitterActionPerformed
         System.exit(0);
     }//GEN-LAST:event_btn_quitterActionPerformed
-
-    private void case17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case17ActionPerformed
-        clicCase(2, 4);
-    }//GEN-LAST:event_case17ActionPerformed
-
-    private void case21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case21ActionPerformed
-        clicCase(3, 2);
-    }//GEN-LAST:event_case21ActionPerformed
-
-    private void case2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case2ActionPerformed
-        clicCase(0, 1);
-    }//GEN-LAST:event_case2ActionPerformed
-
-    private void case11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case11ActionPerformed
-        clicCase(1, 4);
-    }//GEN-LAST:event_case11ActionPerformed
-
-    private void case25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case25ActionPerformed
-        clicCase(4, 0);
-    }//GEN-LAST:event_case25ActionPerformed
-
-    private void case1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case1ActionPerformed
-        clicCase(0, 0);
-    }//GEN-LAST:event_case1ActionPerformed
-
-    private void case9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case9ActionPerformed
-        clicCase(1, 2);
-    }//GEN-LAST:event_case9ActionPerformed
-
-    private void case3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case3ActionPerformed
-       clicCase(0, 2);
-    }//GEN-LAST:event_case3ActionPerformed
-
-    private void case4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case4ActionPerformed
-        clicCase(0, 3);
-    }//GEN-LAST:event_case4ActionPerformed
-
-    private void case5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case5ActionPerformed
-        clicCase(0, 4);
-    }//GEN-LAST:event_case5ActionPerformed
-
-    private void case6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case6ActionPerformed
-        clicCase(0, 5);
-    }//GEN-LAST:event_case6ActionPerformed
-
-    private void case7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case7ActionPerformed
-        clicCase(1, 0);
-    }//GEN-LAST:event_case7ActionPerformed
-
-    private void case8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case8ActionPerformed
-        clicCase(1, 1);
-    }//GEN-LAST:event_case8ActionPerformed
-
-    private void case10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case10ActionPerformed
-        clicCase(1, 3);
-    }//GEN-LAST:event_case10ActionPerformed
-
-    private void case12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case12ActionPerformed
-        clicCase(1, 5);
-    }//GEN-LAST:event_case12ActionPerformed
-
-    private void case13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case13ActionPerformed
-        clicCase(2, 0);
-    }//GEN-LAST:event_case13ActionPerformed
-
-    private void case14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case14ActionPerformed
-        clicCase(2, 1);
-    }//GEN-LAST:event_case14ActionPerformed
-
-    private void case15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case15ActionPerformed
-        clicCase(2, 2);
-    }//GEN-LAST:event_case15ActionPerformed
-
-    private void case16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case16ActionPerformed
-        clicCase(2, 3);
-    }//GEN-LAST:event_case16ActionPerformed
-
-    private void case18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case18ActionPerformed
-        clicCase(2, 5);
-    }//GEN-LAST:event_case18ActionPerformed
-
-    private void case19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case19ActionPerformed
-        clicCase(3, 0);
-    }//GEN-LAST:event_case19ActionPerformed
-
-    private void case20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case20ActionPerformed
-        clicCase(3, 1);
-    }//GEN-LAST:event_case20ActionPerformed
-
-    private void case22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case22ActionPerformed
-        clicCase(3, 3);
-    }//GEN-LAST:event_case22ActionPerformed
-
-    private void case23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case23ActionPerformed
-        clicCase(3, 4);
-    }//GEN-LAST:event_case23ActionPerformed
-
-    private void case24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case24ActionPerformed
-        clicCase(3, 5);
-    }//GEN-LAST:event_case24ActionPerformed
-
-    private void case26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case26ActionPerformed
-        clicCase(4, 1);
-    }//GEN-LAST:event_case26ActionPerformed
-
-    private void case27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case27ActionPerformed
-        clicCase(4, 2);
-    }//GEN-LAST:event_case27ActionPerformed
-
-    private void case28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case28ActionPerformed
-        clicCase(4, 3);
-    }//GEN-LAST:event_case28ActionPerformed
-
-    private void case29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case29ActionPerformed
-        clicCase(4, 4);
-    }//GEN-LAST:event_case29ActionPerformed
-
-    private void case30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case30ActionPerformed
-        clicCase(4, 5);
-    }//GEN-LAST:event_case30ActionPerformed
-
-    private void case31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case31ActionPerformed
-        clicCase(5, 0);
-    }//GEN-LAST:event_case31ActionPerformed
-
-    private void case32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case32ActionPerformed
-        clicCase(5, 1);
-    }//GEN-LAST:event_case32ActionPerformed
-
-    private void case33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case33ActionPerformed
-        clicCase(5, 2);
-    }//GEN-LAST:event_case33ActionPerformed
-
-    private void case34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case34ActionPerformed
-        clicCase(5, 3);
-    }//GEN-LAST:event_case34ActionPerformed
-
-    private void case35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case35ActionPerformed
-        clicCase(5, 4);
-    }//GEN-LAST:event_case35ActionPerformed
-
-    private void case36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_case36ActionPerformed
-        clicCase(5, 5);
-    }//GEN-LAST:event_case36ActionPerformed
 
     /**
      * @param args the command line arguments

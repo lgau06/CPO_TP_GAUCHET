@@ -10,6 +10,11 @@ package chevauchée_fantastique;
  */
 public class Chevauchée_fantastique {
     public static void main(String[] args) {
-        new FenetreJeu();
-    }
+        java.awt.EventQueue.invokeLater(() -> {
+        FenetreJeu fenetre = new FenetreJeu();
+        fenetre.setLocationRelativeTo(null); 
+        fenetre.setVisible(true);            
+    });
+
+ }
 }
