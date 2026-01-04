@@ -29,41 +29,43 @@ public class FenetreJeu extends JFrame {
 
     switch (niveau) {
 
-        case 1: // DÉBUTANT → tout allumé
-            for (int i = 0; i < 6; i++) {
-                for (int j = 0; j < 6; j++) {
-                    config[i][j] = true;
-                }
-            }
-            break;
-
-        case 2: // INTERMÉDIAIRE → centre éteint
-            for (int i = 0; i < 6; i++) {
-                for (int j = 0; j < 6; j++) {
-                    config[i][j] = true;
-                }
-            }
-            config[2][2] = false;
-            config[2][3] = false;
-            config[3][2] = false;
-            config[3][3] = false;
-            break;
-
-        case 3: // EXPERT → chemin complexe mais solvable
+        case 1: // DEBUTANT
     for (int i = 0; i < 6; i++) {
         for (int j = 0; j < 6; j++) {
             config[i][j] = false;
         }
     }
 
-    int[][] chemin = {
-        {0, 1}, {1, 3}, {2, 5}, {4, 4},
-        {5, 2}, {3, 1}, {1, 2}, {2, 4},
-        {4, 5}, {5, 3}
+    int[][] cheminDebutant = {
+        {0,0}, {1,2}, {2,4}, {4,5}, {5,3}, {3,2}, {1,1}
     };
 
-    for (int[] c : chemin) {
+    for (int[] c : cheminDebutant) {
         config[c[0]][c[1]] = true;
+    }
+    break;
+
+        case 2: // INTERMEDIAIRE
+    for (int i = 0; i < 6; i++) {
+        for (int j = 0; j < 6; j++) {
+            config[i][j] = true;
+        }
+    }
+
+    int[][] bloquees = {
+        {0,1}, {1,1}, {2,2}, {3,3}, {4,1}
+    };
+
+    for (int[] b : bloquees) {
+        config[b[0]][b[1]] = false;
+    }
+    break;
+
+        case 3: // EXPERT
+    for (int i = 0; i < 6; i++) {
+        for (int j = 0; j < 6; j++) {
+            config[i][j] = true;
+        }
     }
     break;
 
